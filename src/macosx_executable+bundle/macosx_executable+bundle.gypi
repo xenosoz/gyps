@@ -6,6 +6,7 @@
 #
 {
   'type': 'executable',
+  'mac_bundle': '1',
   'configurations': {
     'Debug': {
       'xcode_settings': {
@@ -38,7 +39,7 @@
         # Example per project settings.
         #'COMBINE_HIDPI_IMAGES': 'YES',
         #'GCC_PRECOMPILE_PREFIX_HEADER': 'YES',
-        #'GCC_PREFIX_HEADER': "test-Prefix.pch',
+        #'GCC_PREFIX_HEADER': 'test-Prefix.pch',
         #'INFOPLIST_FILE': 'test-Info.plist',
         #'PRODUCT_NAME': '$(TARGET_NAME)',
         #'WRAPPER_EXTENSION': 'app',
@@ -78,6 +79,9 @@
   'link_settings': {
     'libraries': [
       '$(SDKROOT)/System/Library/Frameworks/Cocoa.framework',
+      '$(SDKROOT)/System/Library/Frameworks/AppKit.framework',
+      '$(SDKROOT)/System/Library/Frameworks/CoreData.framework',
+      '$(SDKROOT)/System/Library/Frameworks/Foundation.framework',
     ],
   }
 }
