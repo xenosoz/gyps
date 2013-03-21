@@ -92,6 +92,9 @@
   'link_settings': {
     'libraries': [
       '$(SDKROOT)/System/Library/Frameworks/Foundation.framework',
+      '$(SDKROOT)/System/Library/Frameworks/UIKit.framework',
+      '$(SDKROOT)/System/Library/Frameworks/CoreGraphics.framework',
+      '$(SDKROOT)/System/Library/Frameworks/QuartzCore.framework',
     ],
   }
 }
